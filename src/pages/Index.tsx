@@ -50,7 +50,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background relative">
       <div 
-        className="fixed inset-0 z-0 opacity-25"
+        className="fixed inset-0 z-0 opacity-30"
         style={{
           backgroundImage: 'url(https://cdn.poehali.dev/projects/bc2d0cee-fd87-4268-9780-b1dfa07500dd/files/5d210b2a-31bc-47ba-a80c-c5c76ab3ffa8.jpg)',
           backgroundSize: 'cover',
@@ -58,7 +58,10 @@ const Index = () => {
           backgroundAttachment: 'fixed'
         }}
       />
-      <div className="fixed inset-0 z-0 bg-gradient-to-b from-background/70 via-background/85 to-background" />
+      <div className="fixed inset-0 z-0 bg-gradient-to-b from-background/60 via-background/75 to-background/90" />
+      <div className="fixed inset-0 z-0" style={{
+        background: 'radial-gradient(circle at 50% 0%, rgba(0, 170, 255, 0.15) 0%, transparent 50%)'
+      }} />
       
       <div className="relative z-10">
       <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
