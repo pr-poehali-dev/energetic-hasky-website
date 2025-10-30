@@ -18,72 +18,18 @@ interface Product {
 const products: Product[] = [
   {
     id: 1,
-    name: 'Hasky Blue',
-    flavor: 'Черника-Лайм',
+    name: 'Hasky Arctic',
+    flavor: 'Арктическая мята',
     category: 'classic',
     energy: 150,
     volume: '500мл',
-    image: 'https://cdn.poehali.dev/projects/bc2d0cee-fd87-4268-9780-b1dfa07500dd/files/e68e088c-7df0-45a2-a573-71a84caf5407.jpg',
+    image: 'https://cdn.poehali.dev/files/fb233b4e-a3a4-4668-9584-cbd9a57baffc.jpg',
     gradient: 'from-primary to-secondary'
-  },
-  {
-    id: 2,
-    name: 'Hasky Purple',
-    flavor: 'Ягодный микс',
-    category: 'classic',
-    energy: 150,
-    volume: '500мл',
-    image: 'https://cdn.poehali.dev/projects/bc2d0cee-fd87-4268-9780-b1dfa07500dd/files/927f3296-d06c-463b-8ef1-a2d8d07d5f23.jpg',
-    gradient: 'from-secondary to-accent'
-  },
-  {
-    id: 3,
-    name: 'Hasky Orange',
-    flavor: 'Манго-Маракуйя',
-    category: 'tropical',
-    energy: 180,
-    volume: '500мл',
-    image: 'https://cdn.poehali.dev/projects/bc2d0cee-fd87-4268-9780-b1dfa07500dd/files/dfcce0ec-581b-42e2-9086-ebf3d016e6c0.jpg',
-    gradient: 'from-accent to-primary'
-  },
-  {
-    id: 4,
-    name: 'Hasky Ice',
-    flavor: 'Арктический Цитрус',
-    category: 'zero',
-    energy: 120,
-    volume: '330мл',
-    image: 'https://cdn.poehali.dev/projects/bc2d0cee-fd87-4268-9780-b1dfa07500dd/files/e68e088c-7df0-45a2-a573-71a84caf5407.jpg',
-    gradient: 'from-primary to-primary/70'
-  },
-  {
-    id: 5,
-    name: 'Hasky Power',
-    flavor: 'Энергия Красных Ягод',
-    category: 'extreme',
-    energy: 200,
-    volume: '500мл',
-    image: 'https://cdn.poehali.dev/projects/bc2d0cee-fd87-4268-9780-b1dfa07500dd/files/927f3296-d06c-463b-8ef1-a2d8d07d5f23.jpg',
-    gradient: 'from-accent to-secondary'
-  },
-  {
-    id: 6,
-    name: 'Hasky Tropical',
-    flavor: 'Тропический Взрыв',
-    category: 'tropical',
-    energy: 160,
-    volume: '500мл',
-    image: 'https://cdn.poehali.dev/projects/bc2d0cee-fd87-4268-9780-b1dfa07500dd/files/dfcce0ec-581b-42e2-9086-ebf3d016e6c0.jpg',
-    gradient: 'from-secondary to-accent'
   }
 ];
 
 const categories = [
-  { id: 'all', label: 'Все вкусы', icon: 'Grid3x3' },
-  { id: 'classic', label: 'Классика', icon: 'Star' },
-  { id: 'tropical', label: 'Тропик', icon: 'Palmtree' },
-  { id: 'zero', label: 'Zero', icon: 'Droplet' },
-  { id: 'extreme', label: 'Экстрим', icon: 'Zap' }
+  { id: 'all', label: 'Арктическая серия', icon: 'Snowflake' }
 ];
 
 const Index = () => {
@@ -156,21 +102,21 @@ const Index = () => {
             <div className="space-y-8 animate-fade-in">
               <div className="inline-block">
                 <Badge className="bg-gradient-to-r from-primary to-secondary text-lg px-4 py-2">
-                  ⚡ Новая эра энергии
+                  ❄️ Арктическая свежесть
                 </Badge>
               </div>
               
               <h1 className="text-6xl md:text-7xl font-heading font-black leading-tight">
                 <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-                  ЗАРЯЖАЙСЯ
+                  HASKY
                 </span>
                 <br />
-                ДОСТИГАЙ ЦЕЛЕЙ
+                АРКТИЧЕСКАЯ МЯТА
               </h1>
               
               <p className="text-xl text-muted-foreground max-w-lg">
-                Hasky — это не просто энергетик. Это твой партнёр в достижении невозможного. 
-                Яркие вкусы, мощная энергия, стильный дизайн.
+                Ледяная свежесть арктической мяты и мощный заряд энергии. 
+                Hasky Arctic — для тех, кто не боится холода и готов покорять вершины.
               </p>
 
               <div className="flex flex-wrap gap-4">
@@ -194,7 +140,7 @@ const Index = () => {
 
               <div className="flex gap-8 pt-4">
                 <div>
-                  <div className="text-4xl font-heading font-black text-primary">150+</div>
+                  <div className="text-4xl font-heading font-black text-primary">150</div>
                   <div className="text-sm text-muted-foreground">мг кофеина</div>
                 </div>
                 <div>
@@ -202,8 +148,8 @@ const Index = () => {
                   <div className="text-sm text-muted-foreground">сахара</div>
                 </div>
                 <div>
-                  <div className="text-4xl font-heading font-black text-accent">6</div>
-                  <div className="text-sm text-muted-foreground">вкусов</div>
+                  <div className="text-4xl font-heading font-black text-accent">500</div>
+                  <div className="text-sm text-muted-foreground">мл</div>
                 </div>
               </div>
             </div>
@@ -211,8 +157,8 @@ const Index = () => {
             <div className="relative animate-scale-in">
               <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-full blur-3xl" />
               <img 
-                src="https://cdn.poehali.dev/projects/bc2d0cee-fd87-4268-9780-b1dfa07500dd/files/e68e088c-7df0-45a2-a573-71a84caf5407.jpg"
-                alt="Hasky Energy Drink"
+                src="https://cdn.poehali.dev/files/fb233b4e-a3a4-4668-9584-cbd9a57baffc.jpg"
+                alt="Hasky Arctic - Арктическая мята"
                 className="relative z-10 w-full max-w-md mx-auto drop-shadow-2xl hover:scale-105 transition-transform duration-300"
               />
             </div>
@@ -225,10 +171,10 @@ const Index = () => {
           <div className="text-center mb-12 animate-fade-in">
             <h2 className="text-5xl font-heading font-black mb-4">
               <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                НАШИ ВКУСЫ
+                АРКТИЧЕСКАЯ СЕРИЯ
               </span>
             </h2>
-            <p className="text-xl text-muted-foreground">Выбери свой идеальный заряд энергии</p>
+            <p className="text-xl text-muted-foreground">Ледяная свежесть с мощным зарядом энергии</p>
           </div>
 
           <div className="flex flex-wrap justify-center gap-3 mb-12">
