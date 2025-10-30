@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import Icon from '@/components/ui/icon';
+import SportSection from '@/components/SportSection';
 
 interface Product {
   id: number;
@@ -241,8 +242,16 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="about" className="py-20 px-4">
-        <div className="container mx-auto">
+      <section id="about" className="py-20 px-4 relative overflow-hidden">
+        <div 
+          className="absolute inset-0 opacity-10"
+          style={{
+            backgroundImage: 'url(https://cdn.poehali.dev/projects/bc2d0cee-fd87-4268-9780-b1dfa07500dd/files/cee7f97a-1852-48f8-b692-ab0df171c0e3.jpg)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+          }}
+        />
+        <div className="container mx-auto relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 animate-fade-in">
               <h2 className="text-5xl font-heading font-black">
@@ -253,36 +262,36 @@ const Index = () => {
               
               <div className="space-y-4 text-lg text-muted-foreground">
                 <p>
-                  Hasky — это бренд для тех, кто не боится вызовов и всегда идёт вперёд. 
-                  Мы создали энергетик, который отражает дух современной молодёжи — яркий, дерзкий, инновационный.
+                  Hasky Arctic создан для спортсменов и активных людей, которые не останавливаются на достигнутом. 
+                  Мощный заряд энергии и ледяная свежесть арктической мяты — твой идеальный партнёр для тренировок.
                 </p>
                 <p>
-                  Каждая банка Hasky — это взрыв энергии и вкуса. Мы используем только качественные ингредиенты 
-                  и создаём уникальные вкусовые сочетания, которые вдохновляют на подвиги.
+                  Каждая банка — это взрыв бодрости перед соревнованиями, долгими забегами или интенсивной тренировкой. 
+                  150 мг кофеина, витамины B-группы, без сахара — только то, что нужно твоему телу.
                 </p>
                 <p>
-                  Присоединяйся к комьюнити Hasky и заряжайся энергией вместе с тысячами единомышленников!
+                  Двигайся быстрее, прыгай выше, будь сильнее вместе с Hasky Arctic!
                 </p>
               </div>
 
               <div className="flex gap-4 pt-4">
                 <Button size="lg" className="bg-gradient-to-r from-secondary to-accent hover:opacity-90">
-                  <Icon name="Users" size={20} className="mr-2" />
-                  Комьюнити
+                  <Icon name="TrendingUp" size={20} className="mr-2" />
+                  Повысь результаты
                 </Button>
                 <Button size="lg" variant="outline">
-                  <Icon name="Award" size={20} className="mr-2" />
-                  Награды
+                  <Icon name="Target" size={20} className="mr-2" />
+                  Спортпит
                 </Button>
               </div>
             </div>
 
             <div className="grid grid-cols-2 gap-4">
               {[
-                { icon: 'Zap', title: 'Мощная энергия', desc: 'До 200 мг кофеина' },
-                { icon: 'Leaf', title: 'Натуральные вкусы', desc: 'Без искусственных добавок' },
-                { icon: 'Heart', title: 'Витамины группы B', desc: 'Для твоего здоровья' },
-                { icon: 'Sparkles', title: 'Яркий дизайн', desc: 'Выделись из толпы' }
+                { icon: 'Dumbbell', title: 'Для спортсменов', desc: 'Идеально перед тренировкой' },
+                { icon: 'Zap', title: '150 мг кофеина', desc: 'Мощный заряд энергии' },
+                { icon: 'Activity', title: 'Быстрая активация', desc: 'Эффект через 15 минут' },
+                { icon: 'Award', title: 'Без сахара', desc: 'Чистая энергия без лишнего' }
               ].map((item, index) => (
                 <Card 
                   key={index} 
@@ -299,6 +308,8 @@ const Index = () => {
         </div>
       </section>
 
+      <SportSection />
+
       <section id="stores" className="py-20 px-4 bg-muted/30">
         <div className="container mx-auto text-center">
           <h2 className="text-5xl font-heading font-black mb-6">
@@ -307,14 +318,14 @@ const Index = () => {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Hasky доступен в тысячах магазинов по всей стране
+            Hasky доступен в спортивных магазинах, фитнес-клубах и онлайн
           </p>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {[
-              { icon: 'Store', title: 'Розничные сети', desc: 'Во всех крупных супермаркетах' },
-              { icon: 'Fuel', title: 'АЗС', desc: 'На заправочных станциях' },
-              { icon: 'ShoppingBag', title: 'Онлайн', desc: 'Доставка на дом за 2 часа' }
+              { icon: 'Dumbbell', title: 'Фитнес-клубы', desc: 'В лучших тренажёрных залах' },
+              { icon: 'Store', title: 'Спортпит магазины', desc: 'Сеть магазинов спортивного питания' },
+              { icon: 'ShoppingBag', title: 'Онлайн', desc: 'Быстрая доставка для спортсменов' }
             ].map((item, index) => (
               <Card key={index} className="p-8 border-2 hover:border-primary transition-all duration-300 hover:shadow-xl">
                 <Icon name={item.icon as any} size={48} className="text-primary mx-auto mb-4" />
