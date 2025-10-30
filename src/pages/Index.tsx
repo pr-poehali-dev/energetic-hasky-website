@@ -259,6 +259,78 @@ const Index = () => {
           <div className="container mx-auto">
             <div className="text-center mb-16">
               <div className="text-5xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300 mb-4">
+                Отзывы покупателей
+              </div>
+              <p className="text-xl text-white/70">Что говорят те, кто уже попробовал</p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-32">
+              <div className="p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all space-y-4">
+                <div className="flex gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" size={20} className="text-yellow-400 fill-yellow-400" />
+                  ))}
+                </div>
+                <p className="text-white/80 text-lg leading-relaxed">
+                  "Пью перед тренировками — эффект мощнейший! Энергия бьёт ключом, 
+                  концентрация на максимуме. Вкус освежающий, не приторный."
+                </p>
+                <div className="flex items-center gap-3 pt-4 border-t border-white/10">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center text-white font-bold text-lg">
+                    А
+                  </div>
+                  <div>
+                    <div className="text-white font-bold">Алексей</div>
+                    <div className="text-white/60 text-sm">Спортсмен</div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all space-y-4">
+                <div className="flex gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" size={20} className="text-yellow-400 fill-yellow-400" />
+                  ))}
+                </div>
+                <p className="text-white/80 text-lg leading-relaxed">
+                  "Работаю в ночные смены — Husky настоящее спасение. 
+                  Без сахара, без лишних калорий, а бодрости хватает на всю ночь!"
+                </p>
+                <div className="flex items-center gap-3 pt-4 border-t border-white/10">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-cyan-500 to-blue-400 flex items-center justify-center text-white font-bold text-lg">
+                    М
+                  </div>
+                  <div>
+                    <div className="text-white font-bold">Мария</div>
+                    <div className="text-white/60 text-sm">Программист</div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all space-y-4">
+                <div className="flex gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" size={20} className="text-yellow-400 fill-yellow-400" />
+                  ))}
+                </div>
+                <p className="text-white/80 text-lg leading-relaxed">
+                  "Лучший энергетик для экстрима! Беру с собой на сноуборд — 
+                  заряжает на весь день. Дизайн банки тоже огонь 🔥"
+                </p>
+                <div className="flex items-center gap-3 pt-4 border-t border-white/10">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-400 to-cyan-300 flex items-center justify-center text-white font-bold text-lg">
+                    Д
+                  </div>
+                  <div>
+                    <div className="text-white font-bold">Дмитрий</div>
+                    <div className="text-white/60 text-sm">Сноубордист</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center mb-16">
+              <div className="text-5xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300 mb-4">
                 О бренде HUSKY
               </div>
               <p className="text-xl text-white/70">История, рождённая в Арктике</p>
