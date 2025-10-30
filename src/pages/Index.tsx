@@ -64,7 +64,7 @@ const Index = () => {
                   </Button>
                 </div>
 
-                <div className="grid grid-cols-3 gap-8 pt-6">
+                <div className="grid grid-cols-4 gap-6 pt-6">
                   <div className="text-center">
                     <div className="text-5xl font-black text-blue-400">150</div>
                     <div className="text-white/60 mt-2 text-sm">мг кофеина</div>
@@ -76,6 +76,10 @@ const Index = () => {
                   <div className="text-center">
                     <div className="text-5xl font-black text-blue-300">500</div>
                     <div className="text-white/60 mt-2 text-sm">мл</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-5xl font-black text-cyan-300">300₽</div>
+                    <div className="text-white/60 mt-2 text-sm">цена</div>
                   </div>
                 </div>
               </div>
