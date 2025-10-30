@@ -28,8 +28,8 @@ const Index = () => {
               </div>
               
               <Button className="bg-gradient-to-r from-blue-500 to-cyan-400 hover:opacity-90 text-white font-bold px-8">
-                <Icon name="ShoppingCart" size={20} className="mr-2" />
-                КУПИТЬ
+                <Icon name="Phone" size={20} className="mr-2" />
+                КОНТАКТЫ
               </Button>
             </div>
           </div>
@@ -207,8 +207,8 @@ const Index = () => {
                 size="lg" 
                 className="bg-gradient-to-r from-blue-500 to-cyan-400 hover:opacity-90 text-white text-xl font-bold px-16 py-8 rounded-full"
               >
-                <Icon name="ShoppingCart" size={24} className="mr-3" />
-                ЗАКАЗАТЬ СЕЙЧАС
+                <Icon name="Phone" size={24} className="mr-3" />
+                СВЯЗАТЬСЯ С НАМИ
               </Button>
             </div>
           </div>
