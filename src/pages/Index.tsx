@@ -45,7 +45,12 @@ const Index = () => {
                   </div>
                   
                   <div className="text-3xl md:text-4xl font-bold text-white/90">
-                    Энергия Арктики
+                    Для настоящих экстремалов
+                  </div>
+                  
+                  <div className="text-xl text-white/70 max-w-lg">
+                    Покоряй вершины, преодолевай границы, бросай вызов стихии. 
+                    Арктическая энергия для тех, кто не знает слова "невозможно".
                   </div>
                 </div>
 
@@ -122,8 +127,13 @@ const Index = () => {
               </div>
               
               <div className="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
-                Энергия Настоящих Хаски
+                Напиток для экстремалов
               </div>
+              
+              <p className="text-2xl text-white/80 max-w-2xl mx-auto">
+                Горы, сноуборд, паркур, скейт — где бы ты ни был, 
+                HUSKY даёт силу преодолевать любые препятствия
+              </p>
 
               <Button 
                 size="lg" 
