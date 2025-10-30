@@ -50,15 +50,15 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background relative">
       <div 
-        className="fixed inset-0 z-0 opacity-20"
+        className="fixed inset-0 z-0 opacity-25"
         style={{
-          backgroundImage: 'url(https://cdn.poehali.dev/projects/bc2d0cee-fd87-4268-9780-b1dfa07500dd/files/cac4230e-5801-4db2-9b9e-072b3494ec53.jpg)',
+          backgroundImage: 'url(https://cdn.poehali.dev/projects/bc2d0cee-fd87-4268-9780-b1dfa07500dd/files/5d210b2a-31bc-47ba-a80c-c5c76ab3ffa8.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
         }}
       />
-      <div className="fixed inset-0 z-0 bg-gradient-to-b from-background/60 via-background/80 to-background" />
+      <div className="fixed inset-0 z-0 bg-gradient-to-b from-background/70 via-background/85 to-background" />
       
       <div className="relative z-10">
       <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
@@ -103,7 +103,7 @@ const Index = () => {
             <div className="space-y-8 animate-fade-in">
               <div className="inline-block">
                 <Badge className="bg-gradient-to-r from-primary to-secondary text-lg px-4 py-2">
-                  ❄️ Арктическая свежесть
+                  🐺 Дух арктических хаски
                 </Badge>
               </div>
               
@@ -112,12 +112,12 @@ const Index = () => {
                   HASKY
                 </span>
                 <br />
-                АРКТИЧЕСКАЯ МЯТА
+                АРКТИЧЕСКАЯ СИЛА
               </h1>
               
               <p className="text-xl text-muted-foreground max-w-lg">
-                Ледяная свежесть арктической мяты и мощный заряд энергии. 
-                Hasky Arctic — для тех, кто не боится холода и готов покорять вершины.
+                Как упряжка хаски преодолевает арктические просторы, так и ты преодолеешь любые преграды. 
+                Ледяная свежесть мяты и энергия северного сияния в каждом глотке.
               </p>
 
               <div className="flex flex-wrap gap-4">
@@ -244,9 +244,9 @@ const Index = () => {
 
       <section id="about" className="py-20 px-4 relative overflow-hidden">
         <div 
-          className="absolute inset-0 opacity-10"
+          className="absolute inset-0 opacity-15"
           style={{
-            backgroundImage: 'url(https://cdn.poehali.dev/projects/bc2d0cee-fd87-4268-9780-b1dfa07500dd/files/cee7f97a-1852-48f8-b692-ab0df171c0e3.jpg)',
+            backgroundImage: 'url(https://cdn.poehali.dev/projects/bc2d0cee-fd87-4268-9780-b1dfa07500dd/files/ed6f3fc6-d2f8-4c50-9d45-d50a2f28e387.jpg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}
@@ -262,36 +262,37 @@ const Index = () => {
               
               <div className="space-y-4 text-lg text-muted-foreground">
                 <p>
-                  Hasky Arctic создан для спортсменов и активных людей, которые не останавливаются на достигнутом. 
-                  Мощный заряд энергии и ледяная свежесть арктической мяты — твой идеальный партнёр для тренировок.
+                  Hasky — это бренд, вдохновлённый легендарными собаками породы хаски, которые веками помогали людям 
+                  преодолевать арктические просторы. Их невероятная выносливость, сила духа и верность стали нашим символом.
                 </p>
                 <p>
-                  Каждая банка — это взрыв бодрости перед соревнованиями, долгими забегами или интенсивной тренировкой. 
-                  150 мг кофеина, витамины B-группы, без сахара — только то, что нужно твоему телу.
+                  Как упряжка хаски мчится сквозь снежные бури, преодолевая сотни километров без остановки, 
+                  так и Hasky Arctic даёт тебе энергию идти к своим целям несмотря ни на что. 
+                  Ледяная свежесть арктической мяты — это вкус настоящей северной силы.
                 </p>
                 <p>
-                  Двигайся быстрее, прыгай выше, будь сильнее вместе с Hasky Arctic!
+                  Присоединяйся к стае! Покоряй вершины вместе с духом арктических хаски!
                 </p>
               </div>
 
               <div className="flex gap-4 pt-4">
                 <Button size="lg" className="bg-gradient-to-r from-secondary to-accent hover:opacity-90">
-                  <Icon name="TrendingUp" size={20} className="mr-2" />
-                  Повысь результаты
+                  <Icon name="Snowflake" size={20} className="mr-2" />
+                  Арктическая сила
                 </Button>
                 <Button size="lg" variant="outline">
-                  <Icon name="Target" size={20} className="mr-2" />
-                  Спортпит
+                  <Icon name="Mountain" size={20} className="mr-2" />
+                  Истории
                 </Button>
               </div>
             </div>
 
             <div className="grid grid-cols-2 gap-4">
               {[
-                { icon: 'Dumbbell', title: 'Для спортсменов', desc: 'Идеально перед тренировкой' },
-                { icon: 'Zap', title: '150 мг кофеина', desc: 'Мощный заряд энергии' },
-                { icon: 'Activity', title: 'Быстрая активация', desc: 'Эффект через 15 минут' },
-                { icon: 'Award', title: 'Без сахара', desc: 'Чистая энергия без лишнего' }
+                { icon: 'Snowflake', title: 'Арктическая мята', desc: 'Ледяная свежесть севера' },
+                { icon: 'Zap', title: '150 мг кофеина', desc: 'Энергия северного сияния' },
+                { icon: 'Wind', title: 'Быстрый эффект', desc: 'Как арктический ветер' },
+                { icon: 'Mountain', title: 'Выносливость', desc: 'Дух хаски в каждом глотке' }
               ].map((item, index) => (
                 <Card 
                   key={index} 

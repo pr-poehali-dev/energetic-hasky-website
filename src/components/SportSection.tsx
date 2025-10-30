@@ -5,27 +5,27 @@ import Icon from '@/components/ui/icon';
 const SportSection = () => {
   const activities = [
     {
-      icon: 'Bike',
-      title: 'Велоспорт',
-      desc: 'Выносливость на длинных дистанциях',
+      icon: 'Snowflake',
+      title: 'Выносливость',
+      desc: 'Как хаски преодолевают сотни километров',
       color: 'from-primary to-secondary'
     },
     {
-      icon: 'Dumbbell',
-      title: 'Тренажёрный зал',
-      desc: 'Энергия для силовых тренировок',
+      icon: 'Wind',
+      title: 'Скорость',
+      desc: 'Быстрые как арктический ветер',
       color: 'from-secondary to-accent'
     },
     {
-      icon: 'Footprints',
-      title: 'Бег',
-      desc: 'Скорость и выносливость',
+      icon: 'Mountain',
+      title: 'Сила духа',
+      desc: 'Несгибаемость северных собак',
       color: 'from-accent to-primary'
     },
     {
-      icon: 'Mountain',
-      title: 'Экстрим',
-      desc: 'Для экстремальных видов спорта',
+      icon: 'Zap',
+      title: 'Энергия',
+      desc: 'Мощь северного сияния',
       color: 'from-primary to-accent'
     }
   ];
@@ -33,31 +33,31 @@ const SportSection = () => {
   return (
     <section className="py-20 px-4 relative overflow-hidden">
       <div 
-        className="absolute inset-0 opacity-15"
+        className="absolute inset-0 opacity-20"
         style={{
-          backgroundImage: 'url(https://cdn.poehali.dev/projects/bc2d0cee-fd87-4268-9780-b1dfa07500dd/files/51113f5e-2078-4a14-9a9f-ec4fd8c4825f.jpg)',
+          backgroundImage: 'url(https://cdn.poehali.dev/projects/bc2d0cee-fd87-4268-9780-b1dfa07500dd/files/f6f1f9aa-016f-45c5-a405-c5be78102cdf.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
         }}
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-background/80 to-background/95" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background/85 to-background" />
       
       <div className="container mx-auto relative z-10">
         <div className="text-center mb-16">
           <Badge className="bg-gradient-to-r from-primary to-secondary text-lg px-6 py-2 mb-6">
-            🏃 Активный образ жизни
+            🐺 Дух арктики
           </Badge>
           <h2 className="text-5xl md:text-6xl font-heading font-black mb-6">
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              ТВОЙ ИСТОЧНИК ЭНЕРГИИ
+              КАЧЕСТВА ХАСКИ
             </span>
             <br />
-            ДЛЯ ЛЮБОГО СПОРТА
+            В КАЖДОМ ГЛОТКЕ
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Hasky Arctic — это не просто энергетик. Это твой надёжный партнёр в достижении спортивных целей.
-            Почувствуй мощь арктической свежести перед любой тренировкой.
+            Собаки породы хаски известны своей невероятной выносливостью и силой духа. 
+            Hasky Arctic передаёт эти качества тебе — для покорения любых вершин.
           </p>
         </div>
 
