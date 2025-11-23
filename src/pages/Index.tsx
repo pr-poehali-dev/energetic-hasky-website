@@ -196,26 +196,47 @@ const Index = () => {
             <p className="text-xl text-gray-600">Примеры выполненных заказов</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
-            <div className="rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all">
+          <div className="grid md:grid-cols-4 lg:grid-cols-6 gap-4 max-w-7xl mx-auto mb-12">
+            <div className="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:scale-105 transition-all">
+              <img 
+                src="https://cdn.poehali.dev/files/c9db5867-56f8-4ae2-a7e8-64c6870fd121.jpeg"
+                alt="Стильная женская одежда 1"
+                className="w-full h-64 object-cover"
+              />
+            </div>
+            <div className="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:scale-105 transition-all">
+              <img 
+                src="https://cdn.poehali.dev/files/95bd1e1c-8a54-4898-a1a1-9a1d581c91ee.jpeg"
+                alt="Стильная женская одежда 2"
+                className="w-full h-64 object-cover"
+              />
+            </div>
+            <div className="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:scale-105 transition-all">
+              <img 
+                src="https://cdn.poehali.dev/files/96cb9691-d464-4cf3-967d-50edd9887085.jpeg"
+                alt="Стильная женская одежда 3"
+                className="w-full h-64 object-cover"
+              />
+            </div>
+            <div className="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:scale-105 transition-all">
+              <img 
+                src="https://cdn.poehali.dev/files/db3dbbad-af79-46d6-b979-849766305ace.jpeg"
+                alt="Стильная женская одежда 4"
+                className="w-full h-64 object-cover"
+              />
+            </div>
+            <div className="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:scale-105 transition-all">
               <img 
                 src="https://cdn.poehali.dev/projects/bc2d0cee-fd87-4268-9780-b1dfa07500dd/files/6aec7ae3-39aa-4acc-9ffa-2c27059ee4bc.jpg"
-                alt="Работа 1"
-                className="w-full h-80 object-cover"
+                alt="Ткани и материалы"
+                className="w-full h-64 object-cover"
               />
             </div>
-            <div className="rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all">
-              <img 
-                src="https://cdn.poehali.dev/projects/bc2d0cee-fd87-4268-9780-b1dfa07500dd/files/bb8b9fac-0dd4-4764-95a3-d347a69c2b29.jpg"
-                alt="Работа 2"
-                className="w-full h-80 object-cover"
-              />
-            </div>
-            <div className="rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all">
+            <div className="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:scale-105 transition-all">
               <img 
                 src="https://cdn.poehali.dev/projects/bc2d0cee-fd87-4268-9780-b1dfa07500dd/files/61474fdb-0db0-4bb2-9b70-f21d9c43d35b.jpg"
-                alt="Работа 3"
-                className="w-full h-80 object-cover"
+                alt="Мастер за работой"
+                className="w-full h-64 object-cover"
               />
             </div>
           </div>
